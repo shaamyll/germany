@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weser Autohaous</title>
+    <link rel="stylesheet" href="./buy.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+   
+
+
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+   
+</head>
+<body>
+
+
+  
+
+  <nav class="navbar navbar-expand-lg " style=" background-color: transparent; color: white; font-size: large; font-family: Open Sans, sans-serif; position: fixed; z-index: 2; padding: 0px; margin: 0px;">
+    <div class="container-fluid">
+   
+      <div class="container " style= " height: 100px; width: 200px; margin: 0px; padding: 0px; margin-left: 100px;" >
+        <a class="navbar-brand" href="#">
+          <img src="./logo.png"   alt="Bootstrap" width="100%" height="100%">
+        </a>
+      </div>
+
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          
+          <li class="nav-item ms-5 " style="padding-left: 400px;">
+            <a class="nav-link active" style="color: black;" aria-current="page" >Buy Vehicles</a>
+          </li>
+          <li class="nav-item ms-5">
+            <a class="nav-link active" style="color: black; cursor: pointer;" onclick="sellVehicles()">Sell Vehicles</a>
+          </li>
+       
+          <li class="nav-item ms-5">
+            <a class="nav-link active" style="color: black; cursor: pointer;" onclick="About()">About</a>
+          </li>
+          <!-- <li class="nav-item dropdown " style="margin-left: 200px;">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Enterprise   
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li> -->
+          <li class="nav-item ms-3">
+            <button type="button" class="btn btn-primary rounded"  style="margin-left: 100px;"><i class="fa-solid fa-user"></i> &nbsp;  contact</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+
+    </nav>
+    
+      <section style="padding-top: 100px;">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="./images/e5.jpg" class="d-block w-100" style="height: 600px; background-size: cover;" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Explore Our Inventory</h1>
+                        <p>Discover a wide range of quality vehicles that fit every budget and lifestyle.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./images/e1.jpg" class="d-block w-100" style="height: 600px;" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Exceptional Financing Options</h1>
+                        <p>Get behind the wheel with flexible financing solutions tailored to your needs.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./images/e3.jpg" class="d-block w-100" style="height: 600px;" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Top-Notch Customer Service</h1>
+                        <p>Experience our commitment to providing you with the best support every step of the way.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/e4.jpg" class="d-block w-100" style="height: 600px;" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Wide Selection of Accessories</h1>
+                        <p>Browse our extensive collection of must-have gadgets, interior upgrades, and protective gear.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+        <div class="row">
+        <div class="search-form" id="hai" style="width: 700px; margin-top: 50px;margin-left: 50px ;">
+        
+        <h5>Company Search</h5>
+        <select id="brand">
+            <option>Select brand</option>
+            <option>Audi</option>
+            <option>BMW</option>
+            <option>Porsche</option>
+            <option>Volkswagen</option>
+            <option>Mercedes</option>
+            <option>Opel</option>
+            <option>Ford</option>
+
+        </select>
+
+        
+        <select id="bodyShape">
+            <option>Select body shape</option>
+            <option>Station Wagon</option>
+            <option>Sedan</option>
+            <option>Small Car</option>
+            <option>Coupe</option>
+            <option>Convertible</option>
+            <option>SUV</option>
+            <option>Van/MiniBus</option>
+            <option>Transporter</option>
+            <option>Pickup Truck</option>
+
+
+            
+
+        </select>
+
+        <select id="ezFrom">
+            <option>EZ from</option>
+            <option>2024</option>
+            <option>2023</option>
+            <option>2022</option>
+            <option>2021</option>
+            <option>2020</option>
+            <option>2019</option>
+            <option>2018</option>
+
+        </select>
+
+        <select id="singleRoom">
+            <option>Single room to</option>
+            <option>2024</option>
+            <option>2023</option>
+            <option>2022</option>
+            <option>2021</option>
+            <option>2020</option>
+            <option>2019</option>
+            <option>2018</option>
+        </select>
+
+        <select id="">
+            <option >Kilometeres from</option>
+            <option >0</option>
+            <option >5,000 KM</option>
+            <option>10,000 KM</option>
+            <option >15,000 KM</option>
+            <option >20,000 KM</option>
+            <option >25,000 KM</option>
+            <option >30,000 KM</option>
+            <option >35,000 KM</option>
+            <option >40,000 KM</option>
+            <option >45,000 KM</option>
+            <option >50,000 KM</option>
+        </select>
+
+        <select id="">
+            <option >Kilometeres To</option>
+            <option >0</option>
+            <option >5,000 KM</option>
+            <option>10,000 KM</option>
+            <option >15,000 KM</option>
+            <option >20,000 KM</option>
+            <option >25,000 KM</option>
+            <option >30,000 KM</option>
+            <option >35,000 KM</option>
+            <option >40,000 KM</option>
+            <option >45,000 KM</option>
+            <option >50,000 KM</option>
+        </select>
+
+        <select id="">
+            <option >Price from</option>
+            <option >5,000$</option>
+            <option >10,000$</option>
+            <option >15,000$</option>
+            <option >20,000$</option>
+            <option >25,000$</option>
+            <option >30,000$</option>
+            <option >35,000$</option>
+            <option >40,000$</option>
+            <option >45,000$</option>
+            <option >50,000$</option>
+            <option >55,000$</option>
+            <option >60,000$</option>
+            <option >65,000$</option>
+            <option >70,000$</option>
+            <option >75,000$</option>
+            <option >80,000$</option>
+            <option >85,000$</option>
+            <option >90,000$</option>
+            <option >95,000$</option>
+            <option >100,000$</option>
+
+        </select>
+        <select id="">
+            <option >Price To</option>
+            <option >5,000$</option>
+            <option >10,000$</option>
+            <option >15,000$</option>
+            <option >20,000$</option>
+            <option >25,000$</option>
+            <option >30,000$</option>
+            <option >35,000$</option>
+            <option >40,000$</option>
+            <option >45,000$</option>
+            <option >50,000$</option>
+            <option >55,000$</option>
+            <option >60,000$</option>
+            <option >65,000$</option>
+            <option >70,000$</option>
+            <option >75,000$</option>
+            <option >80,000$</option>
+            <option >85,000$</option>
+            <option >90,000$</option>
+            <option >95,000$</option>
+            <option >100,000$</option>
+
+        </select>
+        <p style="color: grey;">Choose the features you want</p>
+
+        <button type="submit">Show Results</button>
+    </div>
+<div data-aos="fade-left" class="auto " style="width: 600px;margin-left: 50px;" >
+<img src="./images/44.png" class="image" alt="">
+</div>
+</div>
+<h1 class="d-flex justify-content-center align-items-center fw-bolder m-5 animate__animated animate__pulse">Verfügbare Produkte</h1>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-4">
+      <div class="card shadow jj mb-4" style="width: 100%; margin: 10px;">
+        <img src="images/b1.webp" class="card-img-top" alt="BMW 520">
+        <div class="card-body">
+          <h5 class="card-title">BMW 520 520d Touring M Sport//Navi/Kamera/PDC/ Winterpaket</h5>
+          <p class="card-text text-muted">5250 KM | 02/2019 | Manuell | Diesel | 110 kW (150 PS)</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Preis: 31.073,00 €</li>
+        </ul>
+        <div class="card-body">
+          <a href=""><button type="button" class="btn btn-primary">Zum Angebot</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4">
+      <div class="card shadow mb-4" style="width: 100%; margin: 10px;">
+        <img src="images/b2.webp" class="card-img-top" alt="BMW 520">
+        <div class="card-body">
+          <h5 class="card-title">BMW X1 X1 xDrive 18d M-Sport LED SHZ PDC KLIMA</h5>
+          <p class="card-text text-muted">10184 KM | 03/2024 | Automatik | Diesel | 140 kW (190 PS)</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Preis: 17.269,00 €</li>
+        </ul>
+        <div class="card-body">
+          <a href=""><button type="button" class="btn btn-primary">Zum Angebot</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4">
+      <div class="card shadow mb-4" style="width: 100%; margin: 10px;">
+        <img src="images/b3.webp" class="card-img-top" alt="BMW 520">
+        <div class="card-body">
+          <h5 class="card-title">BMW X1 X1 sDrive 18i M Sport PDC LED LEDER KLIMA</h5>
+          <p class="card-text text-muted">5480 KM | 02/2022 | Automatik | Benzin | 100 kW (136 PS)</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Preis: 19.876,00 €</li>
+        </ul>
+        <div class="card-body">
+          <a href=""><button type="button" class="btn btn-primary">Zum Angebot</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12 col-md-4">
+      <div class="card shadow mb-4" style="width: 100%; margin: 10px;">
+        <img src="images/e9.webp" class="card-img-top" alt="BMW 520">
+        <div class="card-body">
+          <h5 class="card-title">BMW XM / SHADOW LINE / DRIVING ASSISTENT / M-DRIVERS</h5>
+          <p class="card-text text-muted">16650 KM | 02/2024 | Automatik | Hybrid (Elektro / Benzin) | 360 kW (490 PS)</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Preis: 89.789,00 €</li>
+        </ul>
+        <div class="card-body">
+          <a href=""><button type="button" class="btn btn-primary">Zum Angebot</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4">
+      <div class="card shadow mb-4" style="width: 100%; margin: 10px;">
+        <img src="images/e7.webp" class="card-img-top" alt="BMW 520">
+        <div class="card-body">
+          <h5 class="card-title">BMW X2 xDrive 18 d M Sport / BUSINESS / H&K / KAMERA</h5>
+          <p class="card-text text-muted">6930 KM | 07/2023 | Automatik | Diesel | 110 kW (150 PS)</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Preis: 28.230,00 €</li>
+        </ul>
+        <div class="card-body">
+          <a href=""><button type="button" class="btn btn-primary">Zum Angebot</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4">
+      <div class="card shadow mb-4" style="width: 100%; margin: 10px;">
+        <img src="images/e8.webp" class="card-img-top" alt="BMW 520">
+        <div class="card-body">
+          <h5 class="card-title">BMW 540 i Touring xDrive M Sport / HEAD-UP / DRIVING</h5>
+          <p class="card-text text-muted">16450 KM | 08/2022 | Automatik | Benzin | 245 kW (333 PS)</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Preis: 33.222,00 €</li>
+        </ul>
+        <div class="card-body">
+          <a href=""><button type="button" class="btn btn-primary">Zum Angebot</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Repeat the row and column structure as needed -->
+</div>
+
+
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-body-tertiary text-muted" style="margin-top: 50px; font-family: Open Sans, sans-serif; font-weight: lighter; font-size: medium;">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+    
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+   
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="pt-1" >
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase  mb-4" style="font-weight: 600;">
+              <img src="./file.png" style="width: 100px; height: 60px;"/></i>Weser Autonahas
+            </h6>
+            <p>
+              Weser Autoland GmbH
+              , Barenburger Str. 10,
+              10961 Berlin,
+              Germany
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" >
+            <!-- Links -->
+            <h6 class="text-uppercase mb-4" style="font-weight: 600;">
+              Our Services
+            </h6>
+            <img src="./file.png" style="width: 100px; height: 60px;"/>
+            <p style="font-size: x-small;">Buy Vehicles</p>
+            <p style="font-size: x-small;">Sell Vehicles</p>
+            <p>
+              <a href="#!" class="text-reset" style="text-decoration: none;">Google Playstore</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset" style="text-decoration: none;">App Store</a>
+            </p>
+         
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase  mb-4"  style="font-weight: 600;">
+              The Company
+            </h6>
+            <p>
+              <a href="#!" class="text-reset" style="text-decoration: none;">About Us</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset" style="text-decoration: none;">Privacy</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset" style="text-decoration: none;">Imprint</a>
+            </p>
+           
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase  mb-4" style="font-weight: 600;">Contact</h6>
+            <p style="font-size: medium;"><i class="fas fa-home me-3"></i> Contact us directly 
+              now <br> by clicking <a href="">here.</a>
+            </p>
+              <p style="font-size: small;">Email</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              info@autohaus-weser.de  
+            </p>
+            <p style="font-size: small;">Telephone</p>
+            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    
+      <a class="text-reset " style="text-decoration: none;" href="https://mdbootstrap.com/">Copyright © 2024 by Weser Autoland</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  </div>
+ 
+
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+    function sellVehicles(){
+                      window.location="./index.html"
+                    }
+                    function About(){
+                      window.location="./about.html"
+                    }
+
+  </script>
+</html>
